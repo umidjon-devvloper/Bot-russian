@@ -1,0 +1,12 @@
+{
+  // Cloudflare Workers — faqat frontend (static fayllar) deploy qiladi.
+  // Backend (boot.js), bot va DB bu yerga emas, VPS'ga deploy qilinadi.
+  "name": "omnifind",
+  "compatibility_date": "2025-01-01",
+  "assets": {
+    // Vite build natijasi shu papkaga chiqadi (vite.config.ts -> outDir).
+    "directory": "./dist/public",
+    // React Router uchun: barcha yo'llar index.html'ga qaytsin (SPA).
+    "not_found_handling": "single-page-application"
+  }
+}
